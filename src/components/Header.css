@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.header {
+    background-color: #18978F;
+    margin:0;
+    padding:0rem;
+    display: flex;
+    justify-content: flex-end;
+    font-family:'Inter';
+    color:white;
+    height:12vh;
+    z-index: 3;
+    animation: headerSlideDown 1.5s ease;
+
+}
+
+.nameContainer {
+    margin-right:auto;
+    margin-left:3rem;
+    margin-top:1rem;
+    background-color: #54BAB9;
+    border-radius:10px;
+    height:5rem;
+    padding:15px;
+    text-align:center;
+    animation: backInLeft 3s ease;
+    overflow: hidden;
+}
+
+.nameTitle {
+    margin:0;
+    font-weight:600 !important;
+}
+
+.nameSubtitle {
+    margin:0;
+    font-weight:600 !important;
+}
+
+
+@keyframes headerSlideDown {
+    from {
+        transform:translateY(-12vh);
+    }
+    to {
+        transform:translateY(0vh);
+    }
+}
+
+.sortDropdown {
+    margin:1rem;
+    border-radius:50%;
+    height:4rem;
+    position:relative;
+}
+
+.pulsating:before {
+    content:"";
+    height:1rem;
+    width:10rem;
+    border-radius: 30%;
+    animation: pulsating-background 2s ease-out infinite;
+    position:absolute;
+    left:7px;
+    top:2rem;
+
+}
+
+@keyframes pulsating-background {
+    from {
+        box-shadow: 0 0 0 0px rgba(256,256,256,0.5);
+        opacity: 100%;
+    }
+    to {
+        box-shadow: 0 0 0 50px rgba(256,256,256,0.5);
+        opacity:0%;
+    }
+}
+
+.rangeSlider {
+    margin:1rem;
+    display:flex;
+    flex-direction:column;
+    flex-grow:0;
+    background-color: #54BAB9;
+    border-radius:10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.btn-green {
+    background-color: #54BAB9 !important;
+    color: #F7ECDE !important;
+    margin-top:0.5rem !important;
+    font-weight:600 !important;
+    height:4rem !important;
+    border-radius:1rem !important;
+    font-size:1.5rem !important;
+    width:11rem !important;
+}
+
+
+
+@keyframes bobbing {
+    0% {
+      top:-3px;
+    }
+    100% {
+      top:3px;
+    }
+  }
+
+  .gg-arrows-h {
+    margin:auto;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(2);
+    width: 20px;
+    height: 10px;
+    background:
+     linear-gradient(
+         to left,
+         currentColor 15px,transparent 0)
+         no-repeat 2px 4px/6px 2px,
+     linear-gradient(
+         to left,
+         currentColor 15px,transparent 0)
+         no-repeat 12px 4px/6px 2px
+ }
+ .gg-arrows-h::after,
+ .gg-arrows-h::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    top: 2px
+ }
+ .gg-arrows-h::after {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    left: 1px
+ }
+ .gg-arrows-h::before {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    right: 1px
+ }
+
+ .gg-alarm {
+    background:
+        linear-gradient( to left,
+        currentColor 5px, transparent 0)
+        no-repeat 4.5px 6px/5px 2px,
+        linear-gradient( to left,
+        currentColor 7px, transparent 0)
+        no-repeat 4.5px 2px/2px 6px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    transform: scale(var(--ggs,1));
+    box-shadow: 0 0 0 2px;
+    margin:auto;
+}
+.gg-alarm::after,
+.gg-alarm::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background: currentColor;
+    top: -4px
+}
+.gg-alarm::before {
+    left: -5px;
+    transform: rotate(-42deg)
+}
+.gg-alarm::after {
+    transform: rotate(42deg);
+    right: -5px
+}
+
+@media screen and (max-width:767px) {
+
+    .btn-green {
+        background-color: #54BAB9 !important;
+        color: #F7ECDE !important;
+        margin-top:1rem !important;
+        font-weight:400 !important;
+        height:2.5rem !important;
+        border-radius:1rem !important;
+        font-size:1rem !important;
+        width:100px !important;
+    }
+
+    .nameContainer {
+        display: none;
+    }
+}

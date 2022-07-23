@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:30vh;
+  font-family: 'Inter', sans-serif;
+
+  color: white;
+}
+
+h1 {
+  font-size: 4rem !important;
+  animation: flipInX 1.5s ease-in;
+  font-weight: 700 !important; 
+  
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  opacity: 0%;
+  font-weight: 700 !important; 
+}
+
+.animate {
+  animation: flipInX;
+  animation-duration: 1.5s;
+  opacity:100%;
+}
+
+h2.fadeOut {
+  animation: fadeOutDown 1.5s ease-in-out;
+}
+
+h1.fadeOut {
+  animation: fadeOutDown 2s ease-in-out;
+}
+
+.hidden {
+  display:none;
+}

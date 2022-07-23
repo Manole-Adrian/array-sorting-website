@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+.chooseSort {
+    text-align:center;
+    margin-top:25vh;
+    color:white;
+    font-size:4rem;
+    font-family:'Inter';
+
+    animation: fadeIn 1s ease-in;
+    font-size:4rem;
+    font-family:'Inter';
+    font-weight:700 !important;
+}

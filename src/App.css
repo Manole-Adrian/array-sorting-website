@@ -1,0 +1,17 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+}
+
+body {
+  background:#54BAB9 !important;
+  margin: 0rem;
+  height:100vh;
+  margin:0;
+}
+
+html {
+  height:100vh;
+  margin:0;
+  padding:0;
+}
